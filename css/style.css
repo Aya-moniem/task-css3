@@ -1,0 +1,76 @@
+
+.content{
+  margin:40px auto;
+  width: 60%;
+  height: 400px;
+  margin-top: 90px;
+  background: linear-gradient(375deg, #1cc7d0, #2ede98);
+}
+.header{
+  font-size: 25px;
+  font-style: italic;
+  text-transform: capitalize;
+  color: white;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+div ,section , .front , .back {
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+
+}
+.back {
+  background-color: white;
+  transform: rotateY(180deg); 
+  
+}
+.back img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+section {
+  padding: 20px;
+  margin-top: 10px;
+  transform-style: preserve-3d;
+  position: relative;
+  transition: all 2s;
+  display: inline-block;
+  text-align: center;
+}
+section:hover {
+  transform: rotateY(180deg);
+}
+.front , .back {
+  position: absolute;
+}
+.f1,.f2,.f3 {
+  z-index:  1;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center;
+}
+.f1{
+  background-image: url(../images/team-1.jpg);
+}
+.f3{
+  background-image: url(../images/team-3.jpg);
+}
+.f2{
+  background-image: url(../images/team-2.jpg);
+}
+.sec1{
+  margin-left: 40px;
+}
+i{
+  background: linear-gradient(375deg, #1cc7d0, #2ede98);
+  color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  padding: 8px;
+  margin: 2px;
+}
